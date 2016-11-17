@@ -39,3 +39,9 @@ challenge method arguments: (dice: "count of dice to challenge", value: "value o
 ```
 game.challenge(dice: 19, value: 3) => false
 ```
+
+## Testing
+To run tests, in the root of liars_dice run:
+```
+> rspec spec
+```
