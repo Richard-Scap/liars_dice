@@ -12,7 +12,9 @@ Then bundle the Gemfile
 
 ### Initialize a game
 You may have as many or as little players as you want.
-`game = Game.new(players: 4)`
+```
+game = Game.new(players: 4)
+```
 
 ### Make a move
 In order to move dice from a players hand to the table.
@@ -26,10 +28,14 @@ game.move(player: 2, dice: 1, value: 3)
 ### Make a claim
 Claim how many dice of a particular value you believe there are in all of the dice in the game.
 claim method arguments: (dice: "count of dice to claim", value: "value of dice to claim")
-`game.claim(dice: 6, value: 3)`
+```
+game.claim(dice: 6, value: 3)
+```
 
 
 ### Challenge
 Challenge a claim to see if you are right!
 challenge method arguments: (dice: "count of dice to challenge", value: "value of dice to challenge")
-`game.challenge(dice: 19, value: 3) => false`
+```
+game.challenge(dice: 19, value: 3) => false
+```
